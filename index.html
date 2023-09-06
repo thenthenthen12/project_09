@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main_Page</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery-3.7.0.min.js"></script>
+    <script>
+        $(function(){
+            $('.pc .left').mouseenter(function(){
+                $(this).css({
+                    'width' : '100%'
+                })
+                $(this).next().css({
+                    'width' : '0%'
+                })
+            })
+            $('.pc .left').mouseleave(function(){
+                $(this).css({
+                    'width' : '50%'
+                })
+                $(this).next().css({
+                    'width' : '50%'
+                })
+            })
+            $('.pc .right').mouseenter(function(){
+                $(this).css({
+                    'width' : '100%'
+                })
+                $(this).prev().css({
+                    'width' : '0%'
+                })
+            })
+            $('.pc .right').mouseleave(function(){
+                $(this).css({
+                    'width' : '50%'
+                })
+                $(this).prev().css({
+                    'width' : '50%'
+                })
+            })
+
+            $('.pc .left').mouseenter(function(){
+                $(this).css({
+                    'width' : '100%'
+                })
+                $(this).next().css({
+                    'width' : '0%'
+                })
+            })
+
+
+
+
+            $('footer .inner .right > ul >li:nth-child(1)').click(function(){
+                $(this).toggleClass('on')
+                $('footer .depth_02').slideToggle()
+            })
+
+        })
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <h1>
+                    <a href="#">
+                        <img src="img/main_logo.png" alt="">
+                    </a>
+                </h1>
+            </div><!-- .inner end -->
+        </header>
+        <main>
+            <section class="main_visual pc">
+                <div class="left">
+                    <div>
+                        <img src="img/메인전체1 (1).jpg" alt="">
+                    </div>
+                    <a href="#">
+                        <span></span>
+                    </a>
+                </div><!-- .left end -->
+                <div class="right">
+                    <div>
+                        <img src="img/메인전체2.jpg" alt="">
+                    </div>
+                    <a href="#">
+                        <span></span>
+                    </a>
+                </div><!-- .right end -->
+            </section><!-- .main_visual end -->
+            <section class="main_visual mobile850">
+                <div class="left">
+                    <div>
+                        <img src="img/메인전체1 (1).jpg" alt="">
+                    </div>
+                    <a href="#">
+                        <span></span>
+                    </a>
+                </div><!-- .left end -->
+                <div class="right">
+                    <div>
+                        <img src="img/메인전체2.jpg" alt="">
+                    </div>
+                    <a href="#">
+                        <span></span>
+                    </a>
+                </div><!-- .right end -->
+            </section><!-- .main_visual end -->
+        </main>
+        <footer>
+            <div class="inner">
+                <div class="left">
+                    <ul>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Legal Notices</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Seoul Supply Chains Act</a></li>
+                        <li><a href="#">Do Not Sell or Share My Personal Information</a></li>
+                    </ul>
+                </div><!-- .left end -->
+                <div class="right">
+                    <ul>
+                        <li><img src="img/lang2.png" alt=""></li>
+                        <li class="depth_01">
+                            <span>EN</span>
+                            <ul class="depth_02">
+                                <li>KO</li>
+                                <li>KO</li>
+                                <li>KO</li>
+                            </ul>
+                        </li>
+
+                        
+                    </ul>
+                </div>
+            </div><!-- .inner end -->
+        </footer>
+    </div><!-- #wrap end -->
+    
+</body>
+</html>
