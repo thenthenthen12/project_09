@@ -56,7 +56,7 @@ header a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../img/로고3.png') center center / cover;
+    background: url('../img/현대식품관메인로고.png') center center / cover;
     z-index: 4;
     display: none;
 }
@@ -67,7 +67,7 @@ header a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../img/로고4.png')  center center / cover;
+    background: url('../img/현대백화점메인로고.png')  center center / cover;
     z-index: 4;
     display: none;
 }
@@ -206,7 +206,7 @@ footer .inner .right > ul >li .depth_02 li{
         left: 0;
         width: 100%;
         height: 100%;
-        background: url('../img/logo1-1-1-1-1.png') center center / cover;
+        background: url('../img/현대식품관메인로고.png') center center / cover;
         z-index: 4;
     }
 
